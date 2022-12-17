@@ -64,9 +64,9 @@ div {
 }
 
 .BellotaFont {
-  font-family: 'Bellota', cursive;
+  font-family: 'Bellota', cursive !important;
 }
 
 .RubikFont {
-  font-family: 'Rubik Marker Hatch', cursive;
+  font-family: 'Rubik Marker Hatch', cursive !important;
 }
