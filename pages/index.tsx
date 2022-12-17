@@ -1,18 +1,20 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Rubik, Bellota } from '@next/font/google'
+import { Rubik_Marker_Hatch, Bellota } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { Box, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
 import anime from 'animejs'
 
 
-const RubicFont = Rubik({
-  weight:"700"
+const RubicFont = Rubik_Marker_Hatch({
+  weight:"400",
+  subsets:["cyrillic"]
 })
 
 const BellotaFont = Bellota({
-  weight:"700"
+  weight:"700",
+  subsets:["cyrillic"]
 })
 
 export default function HomePage() {
@@ -24,6 +26,16 @@ export default function HomePage() {
     lettersSubtitle.forEach((elem, key) => {
       if (key < 4 || key > 32) {
         elem.classList.add("yellowText")
+      }
+    })
+
+    let lettersTitle = document.querySelectorAll(".title-h1-main>.letter");
+    lettersTitle.forEach((elem, key) => {
+      if (key>3&&key<7) {
+        elem.classList.add("blueText")
+      }else if(key>6)
+      {
+        elem.classList.add("redText")
       }
     })
     divHider.current?.classList.remove("hidden")

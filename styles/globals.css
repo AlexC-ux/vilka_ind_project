@@ -32,6 +32,16 @@ h3 {
   ;
 }
 
+.blueText {
+  color: #2889ff !important;
+  ;
+}
+
+.redText {
+  color: #ff2828 !important;
+  ;
+}
+
 .bgBtn1{
   background: #302f2deb;
 }
