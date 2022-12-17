@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap');
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -29,14 +25,6 @@ h3 {
 
 .textColor1 {
   color: #ffca28;
-}
-
-.RubikMarkerHatchFont {
-  font-family: 'Rubik Marker Hatch', cursive;
-}
-
-.BelottaFont {
-  font-family: 'Bellota', cursive;
 }
 
 .yellowText {

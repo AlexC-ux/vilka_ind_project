@@ -1,11 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { Rubik, Bellota } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { Box, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
 import anime from 'animejs'
 
+
+const RubicFont = Rubik({
+  weight:"700"
+})
+
+const BellotaFont = Bellota({
+  weight:"700"
+})
 
 export default function HomePage() {
 
@@ -62,7 +70,7 @@ export default function HomePage() {
       className="hidden">
         <Typography
           variant="h1"
-          className='title-h1-main RubikMarkerHatchFont'
+          className={`title-h1-main ${RubicFont.className}`}
           textAlign={"center"}
           sx={{
             color: "white",
@@ -81,7 +89,7 @@ export default function HomePage() {
         </Typography>
         <Typography
           variant="h3"
-          className='title-h3-main BelottaFont'
+          className={`title-h3-main ${BellotaFont.className}`}
           textAlign={"center"}
           sx={{
             color: "white",
@@ -105,7 +113,7 @@ export default function HomePage() {
 
         <Typography
           variant="h3"
-          className='title-h3-main BelottaFont'
+          className={`title-h3-main ${BellotaFont.className}`}
           textAlign={"center"}
           sx={{
             color: "white",
@@ -129,7 +137,7 @@ export default function HomePage() {
 
 
         <Box
-          className='goBtn BelottaFont bgBtn1'
+          className={`goBtn ${BellotaFont.className} bgBtn1`}
           sx={{
             boxShadow: "4px 3px 7px 1px #000000",
             border: 'solid #ffca28',
@@ -149,7 +157,7 @@ export default function HomePage() {
 
 
 
-        <Typography className='BelottaFont'
+        <Typography className={`${BellotaFont.className}`}
           variant='h3'
           sx={{
             mt: "30vh",
@@ -159,7 +167,7 @@ export default function HomePage() {
           Что такое Арсепедия?
         </Typography>
 
-        <Typography className='BelottaFont'
+        <Typography className={`${BellotaFont.className}`}
           variant='h5'
           sx={{
             p: 2,
@@ -177,7 +185,7 @@ export default function HomePage() {
         </Typography>
 
 
-        <Typography className='BelottaFont'
+        <Typography className={`${BellotaFont.className}`}
           variant='h3'
           sx={{
             mt: "30vh",
@@ -187,7 +195,7 @@ export default function HomePage() {
           Что можно найти на Арсепедии?
         </Typography>
 
-        <Typography className='BelottaFont'
+        <Typography className={`${BellotaFont.className}`}
           variant='h5'
           sx={{
             p: 2,
