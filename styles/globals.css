@@ -70,3 +70,27 @@ div {
 .RubikFont {
   font-family: 'Rubik Marker Hatch', cursive !important;
 }
+
+.cardYellowBordered {
+  border: 2px solid #ffffff00;
+  transition: 500ms;
+}
+
+.cardYellowBordered >*> .cardTitle {
+  color: #ffffff00;
+  transition: 500ms;
+  background: #ffffff00;
+  visibility: hidden;
+}
+
+.cardYellowBordered:hover {
+  transition: 500ms;
+  border: 2px solid #ffca28;
+}
+
+.cardYellowBordered:hover >*> .cardTitle {
+  color: #ffffff;
+  background: #1515158f;
+  transition: 500ms;
+  visibility: visible;
+}

@@ -153,6 +153,9 @@ export default function HomePage() {
             textAlign: "center",
             cursor: "pointer",
             fontSize: "20px"
+          }}
+          onClick={()=>{
+            document.location.assign("/select")
           }}>
           Вперёд!
         </Box>
