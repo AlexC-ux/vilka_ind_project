@@ -7,19 +7,9 @@ import React, { useEffect } from 'react'
 import anime from 'animejs'
 
 
-const RubicFont = Rubik_Marker_Hatch({
-  weight:"400",
-  subsets:["cyrillic"]
-})
-
-const BellotaFont = Bellota({
-  weight:"700",
-  subsets:["cyrillic"]
-})
-
 export default function HomePage() {
 
-  const divHider=React.createRef<HTMLDivElement>();
+  const divHider = React.createRef<HTMLDivElement>();
 
   useEffect(() => {
     let lettersSubtitle = document.querySelectorAll(".title-h3-main>.letter");
@@ -31,10 +21,9 @@ export default function HomePage() {
 
     let lettersTitle = document.querySelectorAll(".title-h1-main>.letter");
     lettersTitle.forEach((elem, key) => {
-      if (key>3&&key<7) {
+      if (key > 3 && key < 7) {
         elem.classList.add("blueText")
-      }else if(key>6)
-      {
+      } else if (key > 6) {
         elem.classList.add("redText")
       }
     })
@@ -79,10 +68,10 @@ export default function HomePage() {
   return (
     <>
       <div ref={divHider}
-      className="hidden">
+        className="hidden">
         <Typography
           variant="h1"
-          className={`title-h1-main ${RubicFont.className}`}
+          className={`title-h1-main RubikFont`}
           textAlign={"center"}
           sx={{
             color: "white",
@@ -99,9 +88,10 @@ export default function HomePage() {
             })
           })()}
         </Typography>
+
         <Typography
           variant="h3"
-          className={`title-h3-main ${BellotaFont.className}`}
+          className={`title-h3-main BellotaFont`}
           textAlign={"center"}
           sx={{
             color: "white",
@@ -125,7 +115,7 @@ export default function HomePage() {
 
         <Typography
           variant="h3"
-          className={`title-h3-main ${BellotaFont.className}`}
+          className={`title-h3-main BellotaFont`}
           textAlign={"center"}
           sx={{
             color: "white",
@@ -149,7 +139,7 @@ export default function HomePage() {
 
 
         <Box
-          className={`goBtn ${BellotaFont.className} bgBtn1`}
+          className={`goBtn  bgBtn1 BellotaFont`}
           sx={{
             boxShadow: "4px 3px 7px 1px #000000",
             border: 'solid #ffca28',
@@ -169,7 +159,7 @@ export default function HomePage() {
 
 
 
-        <Typography className={`${BellotaFont.className}`}
+        <Typography className={`BellotaFont`}
           variant='h3'
           sx={{
             mt: "30vh",
@@ -179,7 +169,7 @@ export default function HomePage() {
           Что такое Арсепедия?
         </Typography>
 
-        <Typography className={`${BellotaFont.className}`}
+        <Typography className={`BellotaFont`}
           variant='h5'
           sx={{
             p: 2,
@@ -197,7 +187,7 @@ export default function HomePage() {
         </Typography>
 
 
-        <Typography className={`${BellotaFont.className}`}
+        <Typography className={`BellotaFont`}
           variant='h3'
           sx={{
             mt: "30vh",
@@ -207,7 +197,7 @@ export default function HomePage() {
           Что можно найти на Арсепедии?
         </Typography>
 
-        <Typography className={`${BellotaFont.className}`}
+        <Typography className={`BellotaFont`}
           variant='h5'
           sx={{
             p: 2,

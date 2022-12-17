@@ -11,8 +11,17 @@ body {
   overflow-x: hidden;
 }
 
-h3 {
-  color: "white";
+h1,
+h2,
+h3,
+h4,
+h5,
+body,
+p,
+span,
+div {
+  font-family: inherit;
+  color: white;
 }
 
 .bg1_grey {
@@ -42,13 +51,22 @@ h3 {
   ;
 }
 
-.bgBtn1{
+.bgBtn1 {
   background: #302f2deb;
 }
-.bgBtn1:hover{
+
+.bgBtn1:hover {
   background: #353433eb;
 }
 
-.hidden{
+.hidden {
   display: none !important;
+}
+
+.BellotaFont {
+  font-family: 'Bellota', cursive;
+}
+
+.RubikFont {
+  font-family: 'Rubik Marker Hatch', cursive;
 }
