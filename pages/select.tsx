@@ -16,7 +16,7 @@ export default function SelectPage() {
                         width: "100%",
                         height: "90vh"
                     }}>
-                    <Grid item xs={6}>
+                    <Grid item md={6} xs={12}>
                         <Card variant="outlined"
                             className="cardYellowBordered"
                             component={Box}
@@ -28,7 +28,7 @@ export default function SelectPage() {
                                 borderRadius: "30px",
                                 backgroundPosition: "50% 0px",
                             }}
-                            onClick={()=>{document.location.assign("/franks")}}
+                            onClick={() => { document.location.assign("/franks") }}
                         >
                             <div className=""
                                 style={{
@@ -36,18 +36,19 @@ export default function SelectPage() {
                                 }}>
                                 <div className=""
                                     style={{
-                                        height: "80%",
-                                        cursor:"pointer"
+                                        height: "60%",
+                                        cursor: "pointer"
                                     }} />
                                 <Typography
                                     variant="h5"
                                     className="cardTitle BellotaFont"
                                     textAlign="center"
                                     sx={{
-                                        height: "20%",
-                                        p: 4,
+                                        height: "40%",
+                                        pt: 3,
                                         borderRadius: "50px 50px 0px 0px",
-                                        cursor:"pointer"
+                                        cursor: "pointer",
+                                        fontSize: "2rem"
                                     }}>
                                     Любимый во Франксе
                                 </Typography>
@@ -55,7 +56,7 @@ export default function SelectPage() {
 
                         </Card>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item md={6} xs={12}>
                         <Card variant="outlined"
                             className="cardYellowBordered"
                             component={Box}
@@ -67,7 +68,7 @@ export default function SelectPage() {
                                 borderRadius: "30px",
                                 backgroundPosition: "50% 0px",
                             }}
-                            onClick={()=>{document.location.assign("/evangelion")}}
+                            onClick={() => { document.location.assign("/evangelion") }}
                         >
                             <div className=""
                                 style={{
@@ -75,18 +76,19 @@ export default function SelectPage() {
                                 }}>
                                 <div className=""
                                     style={{
-                                        height: "80%",
-                                        cursor:"pointer"
+                                        height: "60%",
+                                        cursor: "pointer"
                                     }} />
                                 <Typography
                                     variant="h5"
                                     className="cardTitle BellotaFont"
                                     textAlign="center"
                                     sx={{
-                                        height: "20%",
-                                        p: 4,
+                                        height: "40%",
+                                        pt: 3,
                                         borderRadius: "50px 50px 0px 0px",
-                                        cursor:"pointer"
+                                        cursor: "pointer",
+                                        fontSize: "2rem"
                                     }}>
                                     Евангелион
                                 </Typography>
