@@ -62,11 +62,11 @@ export default function SelectPage() {
                             component={Box}
                             sx={{
                                 boxShadow: "2px 2px 14px black",
-                                backgroundImage: "url('https://s0.smartresize.com/wallpaper/431/580/HD-wallpaper-eva-01-berserk-01-eva-evangelion.jpg')",
+                                backgroundImage: "url('https://i.ibb.co/9qSGxwx/HD-wallpaper-eva-01-berserk-01-eva-evangelion.jpg')",
                                 height: "100%",
                                 backgroundSize: "cover",
                                 borderRadius: "30px",
-                                backgroundPosition: "50% 0px",
+                                backgroundPosition: "50% 35%",
                             }}
                             onClick={() => { document.location.assign("/evangelion") }}
                         >
