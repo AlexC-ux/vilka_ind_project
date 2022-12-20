@@ -13,7 +13,7 @@ export default function EvangelionPage() {
         divHider.current!.classList.remove("hidden");
 
         animejs({
-            targets: ["#__next > div > div > div:nth-child(1) > svg > path"],
+            targets: ["div.evangelionTextBox path"],
             strokeDashoffset: [animejs.setDashoffset, 0],
             easing: 'easeInOutSine',
             duration: 10000,
@@ -21,7 +21,7 @@ export default function EvangelionPage() {
             direction: 'normal',
         })
         animejs({
-            targets: ["#__next > div > div > div:nth-child(2) > svg > path"],
+            targets:["div.evangelionImage path"],
             strokeDashoffset: [animejs.setDashoffset, 0],
             easing: 'cubicBezier(0.92,0.08,0.71,0.87);',
             duration: 2500,
@@ -48,7 +48,7 @@ export default function EvangelionPage() {
                 </Box>
 
                 <Box
-                    className="evangelionTextBox"
+                    className="evangelionImage"
                     sx={{
                         svg: {
                             mx: "auto",
