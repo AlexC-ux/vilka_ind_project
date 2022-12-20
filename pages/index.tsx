@@ -67,6 +67,7 @@ export default function HomePage() {
 
   return (
     <>
+    
       <div ref={divHider}
         className="hidden">
         <Typography
@@ -76,7 +77,8 @@ export default function HomePage() {
           sx={{
             color: "white",
             mt: "14vw",
-            overflowY: "hidden",
+            overflow: "hidden",
+            fontSize:"min(14vw,6rem)",
           }}>
           {(() => {
             return Array.from("Арсепедия").map((value, index) => {
