@@ -55,6 +55,7 @@ export default function FranksPage() {
                             maxHeight: "10rem",
                             height: "40vw",
                             mt: 4,
+                            maxWidth:"89vw",
                         }
                     }}>
                     <FranxxLogo />
