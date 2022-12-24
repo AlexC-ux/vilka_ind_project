@@ -21,7 +21,7 @@ export default function EvangelionPage() {
             direction: 'normal',
         })
         animejs({
-            targets:["div.evangelionImage path"],
+            targets: ["div.evangelionImage path"],
             strokeDashoffset: [animejs.setDashoffset, 0],
             easing: 'cubicBezier(0.92,0.08,0.71,0.87);',
             duration: 2500,

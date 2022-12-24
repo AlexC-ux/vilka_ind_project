@@ -97,7 +97,7 @@ export default function HomePage() {
           textAlign={"center"}
           sx={{
             color: "white",
-            mt: "3vw",
+            mt: "2.5vw",
             overflow: "hidden",
             pt: 3
           }}>

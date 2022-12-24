@@ -28,7 +28,7 @@ export default function SelectPage() {
                                 borderRadius: "30px",
                                 backgroundPosition: "50% 0px",
                             }}
-                            onClick={() => { document.location.assign("/franks") }}
+                            onClick={() => { document.location.assign("/franxx") }}
                         >
                             <div className=""
                                 style={{
