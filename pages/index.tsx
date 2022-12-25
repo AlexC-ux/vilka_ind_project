@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import { Box, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
 import anime from 'animejs'
-
+import Y from "../Modules/YellowText";
 
 export default function HomePage() {
 
@@ -67,7 +67,7 @@ export default function HomePage() {
 
   return (
     <>
-    
+
       <div ref={divHider}
         className="hidden">
         <Typography
@@ -78,7 +78,7 @@ export default function HomePage() {
             color: "white",
             mt: "14vw",
             overflow: "hidden",
-            fontSize:"min(14vw,6rem)",
+            fontSize: "min(14vw,6rem)",
           }}>
           {(() => {
             return Array.from("Арсепедия").map((value, index) => {
@@ -156,18 +156,16 @@ export default function HomePage() {
             cursor: "pointer",
             fontSize: "20px"
           }}
-          onClick={()=>{
+          onClick={() => {
             document.location.assign("/select")
           }}>
           Вперёд!
         </Box>
 
-
-
         <Typography className={`BellotaFont`}
           variant='h3'
           sx={{
-            mt: "30vh",
+            mt: "20vh",
             p: 2,
             color: "white"
           }}>
@@ -183,19 +181,14 @@ export default function HomePage() {
             borderBottom: "4px dashed #ffca28",
             color: "white"
           }}>
-          <div
-            className='yellowText'
-            style={{
-              display: "inline-flex"
-            }}
-          >Арсепедия</div> - это портал, который позволит Вам ознакомиться с [придумать текст!]
+          {Y("Арсепедия")} - это портал, который позволит Вам ознакомиться с множеством работ японской мультипликации и найти ответы на интересующие Вас вопросы
         </Typography>
 
 
         <Typography className={`BellotaFont`}
           variant='h3'
           sx={{
-            mt: "30vh",
+            mt: "10vh",
             p: 2,
             color: "white"
           }}>
@@ -211,12 +204,7 @@ export default function HomePage() {
             borderBottom: "4px dashed #ffca28",
             color: "white"
           }}>
-          На <div
-            className='yellowText'
-            style={{
-              display: "inline-flex"
-            }}
-          >Арсепедии</div> представлены [придумать текст!]
+          На данный момент в Арспедии представлены только два аниме: «Евангелион» и «Любимый во франксе», но со временем наша библиотека будет увеличиваться и улучшаться. Оставайтесь с нами и следите за обновлениями
         </Typography>
       </div>
     </>
