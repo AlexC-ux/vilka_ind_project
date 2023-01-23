@@ -22,7 +22,7 @@ export default function SelectPage() {
                             component={Box}
                             sx={{
                                 boxShadow: "2px 2px 14px black",
-                                backgroundImage: "url('https://images.alphacoders.com/111/thumb-1920-1115213.jpg')",
+                                backgroundImage: "url('/choosers/franxxx-chooser.jpg')",
                                 height: "100%",
                                 backgroundSize: "cover",
                                 borderRadius: "30px",
@@ -62,7 +62,7 @@ export default function SelectPage() {
                             component={Box}
                             sx={{
                                 boxShadow: "2px 2px 14px black",
-                                backgroundImage: "url('https://i.ibb.co/9qSGxwx/HD-wallpaper-eva-01-berserk-01-eva-evangelion.jpg')",
+                                backgroundImage: "url('/choosers/eva-chooser.jpg')",
                                 height: "100%",
                                 backgroundSize: "cover",
                                 borderRadius: "30px",
